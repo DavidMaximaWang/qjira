@@ -36,7 +36,7 @@
     "eject": "react-scripts eject",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r git@github.com:lvewang/task_manage-github.io.git -b master"
+    "deploy": "gh-pages -d build -r git@github.com:lvewang/lvewang.github.io.git -b main"
   },
   "eslintConfig": {
     "extends": [
