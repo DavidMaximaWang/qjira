@@ -1,5 +1,10 @@
 import styled from "@emotion/styled";
-import { ButtonNoPadding, ErrorBox, Row } from "components/lib";
+import {
+  ButtonNoPadding,
+  ErrorBox,
+  Row,
+  ScreenContainer,
+} from "components/lib";
 import { useDebounce } from "utils";
 import { useProjects } from "utils/project";
 import { useDocumentTitle } from "utils/useDocumentTitle";
@@ -16,7 +21,7 @@ export const ProjectListScreen = () => {
   const { data: users } = useUser();
 
   return (
-    <Container>
+    <ScreenContainer>
       <Row between={true}>
         <h1>Project list</h1>
         <ButtonNoPadding type={"link"} onClick={open}>
@@ -35,7 +40,7 @@ export const ProjectListScreen = () => {
         users={users || []}
         dataSource={list || []}
       ></List>
-    </Container>
+    </ScreenContainer>
   );
 };
 

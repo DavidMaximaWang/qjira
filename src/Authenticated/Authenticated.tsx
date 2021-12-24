@@ -3,6 +3,7 @@ import { Button, Dropdown, Menu } from "antd";
 import { ReactComponent as SoftwareLogo } from "assets/software-logo.svg";
 import { ButtonNoPadding, Row } from "components/lib";
 import { ProjectPopover } from "components/project-popover";
+import { UserPopover } from "components/user-popover";
 import { useAuth } from "context/AuthContext";
 import { Navigate, Route, Routes } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
@@ -41,7 +42,7 @@ const PageHeader = () => {
           <SoftwareLogo width={"18rem"} color={"rgb(38, 132, 255)"} />
         </ButtonNoPadding>
         <ProjectPopover />
-        <span>User</span>
+        <UserPopover />
       </HeaderLeft>
       <HeaderRight>
         <Dropdown
