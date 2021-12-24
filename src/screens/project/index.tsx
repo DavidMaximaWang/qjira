@@ -20,10 +20,14 @@ export const ProjectScreen = () => {
       <Aside>
         <Menu mode={"inline"} selectedKeys={[routeType]}>
           <Menu.Item key={"kanban"}>
-            <Link to={"../kanban"}>board</Link>
+            <Link to={"kanban"} replace={true}>
+              board
+            </Link>
           </Menu.Item>
           <Menu.Item key={"epic"}>
-            <Link to={"../epic"}>task group</Link>
+            <Link to={"epic"} replace={true}>
+              task group
+            </Link>
           </Menu.Item>
         </Menu>
       </Aside>
